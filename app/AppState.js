@@ -2,8 +2,15 @@ import { EventEmitter } from "./Utils/EventEmitter.js"
 import { isValidProp } from "./Utils/isValidProp.js"
 
 class AppState extends EventEmitter {
+  abilitiesSlots = 5
+
+  PokeApiAbilities = []
+
   /** @type {import('./Models/Value').Value[]} */
-  values = []
+  myAbilities = []
+
+  activeAbility = []
+
 }
 
 export const ProxyState = new Proxy(new AppState(), {
