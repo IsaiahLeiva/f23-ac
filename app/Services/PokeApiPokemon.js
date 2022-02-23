@@ -19,3 +19,5 @@ export class SandboxPokemon {
         this.weight = weight
     }
 }
+
+export const PokeApiAbilities = new PokeApiAbilities()
